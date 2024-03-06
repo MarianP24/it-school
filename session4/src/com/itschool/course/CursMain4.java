@@ -5,5 +5,11 @@ public class CursMain4 {
         System.out.println("Hello World");
         System.out.println("Hello!");
         System.out.println("Hello from Ionutz");
+
+        String firstName = "Marian";
+        String lastName = "Paraianu";
+
+        firstName += lastName;
+        System.out.println("firstname");
     }
 }
