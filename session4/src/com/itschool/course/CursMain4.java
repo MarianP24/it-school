@@ -7,9 +7,9 @@ public class CursMain4 {
         System.out.println("Hello from Ionutz");
 
         String firstName = "Marian";
-        String lastName = "Paraianu";
+        String lastName = " Paraianu";
 
         firstName += lastName;
-        System.out.println("firstname");
+        System.out.println(firstName);
     }
 }

@@ -3,36 +3,33 @@ package com.itschool.homework;
 import java.util.Scanner;
 
 public class Challenges {
-    static void challenge1(){
+    static void challenge1() {
         System.out.println("Raspuns challenge1:");
         //Binary Arithmetic Operators:
-        int a, b, length, breadth, area;
-        int addition = 0;
-        int multiplication = 0;
-        int subtraction = 0;
-        int division = 0;
-        int modulus = 0;
         Scanner input = new Scanner(System.in);
         System.out.println("Please insert first number: ");
-        a = input.nextInt();
+        int a = input.nextInt();
         System.out.println("Please insert second number: ");
-        b = input.nextInt();
-        addition = a + b;
-        subtraction = a - b;
-        multiplication = a * b;
-        division = a/b;
-        modulus = a%b;
+        int b = input.nextInt();
+        int addition = a + b;
+        int subtraction = a - b;
+        int multiplication = a * b;
+        int division = a / b;
+        int modulus = a % b;
         System.out.println("Addition of the 2 numbers is: " + addition);
         System.out.println("Subtraction of the 2 numbers is: " + subtraction);
         System.out.println("Division of the 2 numbers is: " + division);
         System.out.println("Multiplication of the 2 numbers is: " + multiplication);
         System.out.println("Modulus of the 2 numbers is: " + modulus);
+    }
 
+    static void rectangleArea(){
+        Scanner input= new Scanner(System.in);
         System.out.println("Insert length of the rectangle");
-        length = input.nextInt();
+        int length = input.nextInt();
         System.out.println("Insert breadth of the rectangle");
-        breadth = input.nextInt();
-        area = length * breadth;
+        int breadth = input.nextInt();
+        int area = length * breadth;
         System.out.println("Area of the rectangle is: " + area);
     }
     static void challenge2(){
@@ -50,31 +47,19 @@ public class Challenges {
     static void challenge3(){
         System.out.println("Raspuns challenge3:");
         //Logical Complement and Negation Operators
-        boolean a, b;
-        int c, d;
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please insert first integer value:");
-        c = input.nextInt();
-        if(c >= 0){
-            System.out.println("Your inserted integer value is positive");
-        }
-        else {
-            System.out.println("Your inserted integer value is negative");
-        }
-        System.out.println("Please insert second integer value:");
-        d = input.nextInt();
-        if(d >= 0){
-            System.out.println("Your inserted integer value is positive");
-        }
-        else {
-            System.out.println("Your inserted integer value is negative");
-        }
+        int c = input.nextInt();
+        String positiveInput = "Your inserted integer value is positive";
+        String negativeInput = "Your inserted integer value is negative";
+        String validare = (c >= 0) ? positiveInput : negativeInput;
+        System.out.println(validare);
 
         System.out.println("Please insert a boolean value:");
-        a = input.nextBoolean();
+        boolean a = input.nextBoolean();
         System.out.println("Please insert second boolean value:");
-        b = input.nextBoolean();
+        boolean b = input.nextBoolean();
         a = !a;
         b = !b;
         System.out.println("Applied logical operator ! to first boolean value results: " + a);
@@ -83,25 +68,22 @@ public class Challenges {
     static void challenge4(){
         System.out.println("Raspuns challenge4:");
         //Increment and decrement Operators
-        int a;
-        for (a=1; a<=10; a++)
+        for (int a=1; a<=10; a++)
             System.out.println(a);
-        for (a=10; a>=0; a--)
+        for (int a=10; a>=0; a--)
             System.out.println(a);
     }
     static void challenge5(){
         System.out.println("Raspuns challenge5:");
         //Assignment and Compound Assignment Operators
         Scanner input = new Scanner(System.in);
-        int a, b, c, d, f, k, l, m, n, procentaj;
-        float price, newprice, pricediscount, discount;
-        a = 5;
-        b = 2;
-        c = 4;
-        d = 1;
-        f = 10;
-        k = l = m = n = 5;
-        a = b;
+        int b = 2;
+        int c = 4;
+        int d = 1;
+        int f = 10;
+        int l, m, n;
+        int k = l = m = n = 5;
+        int a = b;
         System.out.println(a);
         b +=a;
         System.out.println(b);
@@ -125,7 +107,7 @@ public class Challenges {
             System.out.println(true);
         else
             System.out.println(false);
-        //shits the l bynary with 1 bit to the left
+        //shifts the l binary with 1 bit to the left
         l <<= 1;
         System.out.println(l);
         //shifts the m binary with 1 bit to the right side
@@ -136,39 +118,38 @@ public class Challenges {
         System.out.println(n);
 
         System.out.println("Pretul unui pix este:");
-        price = input.nextFloat();
+        float price = input.nextFloat();
         System.out.println("Cu cat % vrei sa micesti pretul pixului?");
-        procentaj = input.nextInt();
+        int procentaj = input.nextInt();
         System.out.println("Pretul se micsoreaza cu " + procentaj + "%");
-        discount = price * procentaj / 100;
-        //unde folosesc compound assignment-------------------------------------????-------
-        newprice = price - discount;
-        System.out.println("Noul pret este: " + newprice);
+        float discount = price * procentaj / 100;
+        price -= discount;
+        System.out.println("Noul pret este: " + price);
     }
     static void challenge6(){
         System.out.println("Raspuns challenge6:");
         //Relational Operators
         Scanner input = new Scanner(System.in);
-        int a, b, lowerRange, upperRange, numar;
         System.out.println("Insert first number");
-        a = input.nextInt();
+        int a = input.nextInt();
         System.out.println("Insert second number");
-        b = input.nextInt();
-        if (a<b)
+        int b = input.nextInt();
+        if (a < b) {
             System.out.println("Primul numar este mai mic decat cel de-al doilea");
-        if (a>b)
+        } else if (a > b) {
             System.out.println("Primul numar este mai mare decat cel de-al doilea");
-        if (a==b)
+        } else {
             System.out.println("Cele doua numere sunt egale");
+        }
 
         System.out.println("Introdu lowerRange");
-        lowerRange = input.nextInt();
+        int lowerRange = input.nextInt();
         System.out.println("Introdu upperRange");
-        upperRange = input.nextInt();
+        int upperRange = input.nextInt();
         System.out.println("Introdu un numar");
-        numar = input.nextInt();;
+        int number = input.nextInt();;
 
-        if (numar<=upperRange && numar >=lowerRange) {
+        if (number<=upperRange && number >=lowerRange) {
             System.out.println("Numarul este intre cele doua limite");
         }
         else {
@@ -178,15 +159,16 @@ public class Challenges {
     static void challenge7(){
         System.out.println("Raspuns challenge7:");
         //Numeric Promotion
-        short ab = 40, ac = 60, sum1;
+        short ab = 40;
+        short ac = 60;
         int a = 10;
-        double b = 50.200001d, sum2;
-        sum2 = a + b;
+        double b = 50.200001d;
+        double sum2 = a + b;
         //a += b;
         System.out.println(sum2);
         //arithmetic operations on short, byte, char are automatically promoted to int if used in an expression
         //sum1 = ab + ac;
-        sum1 = (short)(ab+ac);
+        short sum1 = (short)(ab+ac);
         System.out.println(sum1);
     }
 }
