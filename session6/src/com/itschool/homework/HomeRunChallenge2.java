@@ -5,7 +5,8 @@ public class HomeRunChallenge2 {
         HomeRunChallenge2 home = new HomeRunChallenge2();
         home.challengeRun2();
     }
-    public void challengeRun2(){
+
+    public void challengeRun2() {
         int a = 20;
         int b = 50;
         System.out.println(a == b);

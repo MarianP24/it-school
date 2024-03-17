@@ -24,8 +24,7 @@ public class CursMain5 {
 
         System.out.println(trueVar | falseVar | var);
 
-        //garbage collector - urmareste programul si identifica obiectele care nu mai au referinta si
-        // dealoca memoria ocupata de acestea
+        //garbage collector - identifica obiectele iesite din scop si le distruge, eliberand memoria
         //memoria este divizata in stack si heap
         //in stack sunt primitivile, invocarile, var locale
         //in heap sunt boiectele

@@ -6,15 +6,14 @@ public class HomeRunChallenge5 {
         home.challengeRun5();
     }
 
-    public void challengeRun5(){
+    public void challengeRun5() {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
-        for (int b = 1; b <=10; b++) {
+        for (int b = 1; b <= 10; b++) {
             if (b % 2 == 0) {
                 System.out.println(b);
             }
         }
     }
-
 }
