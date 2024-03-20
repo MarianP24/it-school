@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class HomeRunChallenge2 {
     public static void main(String[] args) {
         HomeRunChallenge2 home = new HomeRunChallenge2();
-        home.chalengeRun2();
+        home.challengeRun2();
     }
 
-    public void chalengeRun2() {
+    public void challengeRun2() {
         Scanner input = new Scanner(System.in);
         System.out.print("Please insert a number between 1 and 12: ");
         int a = input.nextInt();

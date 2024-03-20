@@ -8,7 +8,7 @@ public class HomeRunChallenge16 {
 
     public void challengeRun16() {
         int a = 50;
-        int negateA = 0;
+        int negateA;
         System.out.println(negateA = -a);
         int absValue = Math.abs(negateA);
         System.out.println(++absValue);

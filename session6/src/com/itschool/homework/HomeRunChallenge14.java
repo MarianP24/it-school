@@ -8,7 +8,7 @@ public class HomeRunChallenge14 {
 
     public void challengeRun14() {
         int counter = 0;
-        System.out.println(counter = ++counter);
+        System.out.println(++counter);
         System.out.println(--counter);
     }
 }

@@ -15,10 +15,10 @@ public class HomeRunChallenge10 {
         do {
             showMenu();
             chooseCase(input);
-            if (option == 3) {
-                break;
-            }
-        } while (true);
+//            if (option == 3) {
+//                break;
+//            }
+        } while (option!=3);
     }
 
     public void showMenu() {

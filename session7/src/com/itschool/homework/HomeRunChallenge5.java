@@ -14,10 +14,9 @@ public class HomeRunChallenge5 {
         int n = input.nextInt();
         int firstNumber = 0;
         int secondNumber = 1;
-        int nextNumber;
         for (int i = 0; i < n; i++) {
             System.out.print(" " + firstNumber);
-            nextNumber = firstNumber + secondNumber;
+            int nextNumber = firstNumber + secondNumber;
             firstNumber = secondNumber;
             secondNumber = nextNumber;
         }

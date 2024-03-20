@@ -9,7 +9,7 @@ public class HomeRunChallenge13 {
     public void challengeRun13() {
         boolean isRaining = true;
         boolean isSunny = false;
-        System.out.println(isRaining = !isRaining);
-        System.out.println(isSunny = !isSunny);
+        System.out.println(!isRaining);
+        System.out.println(!isSunny);
     }
 }

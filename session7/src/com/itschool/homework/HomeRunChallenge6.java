@@ -15,8 +15,12 @@ public class HomeRunChallenge6 {
         while (b != -1) {
             System.out.println("Please insert numbers: ");
             int a = input.nextInt();
-            b = a;
-            addition += a;
+            if (a == -1) {
+                break;
+            } else {
+                b = a;
+                addition += a;
+            }
         }
         System.out.println("The addition of the numbers inserted is: " + addition);
     }
