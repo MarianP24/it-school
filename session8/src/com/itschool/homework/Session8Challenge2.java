@@ -2,9 +2,9 @@ package com.itschool.homework;
 
 import java.util.Scanner;
 
-public class Session9Challenge2 {
+public class Session8Challenge2 {
     public static void main(String[] args) {
-        Session9Challenge2 run = new Session9Challenge2();
+        Session8Challenge2 run = new Session8Challenge2();
         run.challengeRun2();
     }
 

@@ -1,8 +1,8 @@
 package com.itschool.homework;
 
-public class Session9Challenge4 {
+public class Session8Challenge4 {
     public static void main(String[] args) {
-        Session9Challenge4 run = new Session9Challenge4();
+        Session8Challenge4 run = new Session8Challenge4();
         run.challengeRun4();
     }
 
@@ -13,7 +13,6 @@ public class Session9Challenge4 {
             char ch = remove.charAt(i);
             if (isVowel(ch)) {
                 remove.deleteCharAt(i);
-                i--;
             }
         }
         System.out.println(remove);

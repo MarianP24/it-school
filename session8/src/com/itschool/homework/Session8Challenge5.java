@@ -1,8 +1,8 @@
 package com.itschool.homework;
 
-public class Session9Challenge5 {
+public class Session8Challenge5 {
     public static void main(String[] args) {
-        Session9Challenge5 run = new Session9Challenge5();
+        Session8Challenge5 run = new Session8Challenge5();
         run.challengeRun5();
     }
 

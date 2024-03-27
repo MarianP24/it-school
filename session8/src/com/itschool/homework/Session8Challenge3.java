@@ -2,9 +2,9 @@ package com.itschool.homework;
 
 import java.util.List;
 
-public class Session9Challenge3 {
+public class Session8Challenge3 {
     public static void main(String[] args) {
-        Session9Challenge3 run = new Session9Challenge3();
+        Session8Challenge3 run = new Session8Challenge3();
         run.ChallengeRun3();
     }
 
