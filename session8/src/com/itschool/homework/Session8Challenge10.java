@@ -44,11 +44,13 @@ public class Session8Challenge10 {
     public void challengeRun10() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please insert your text");
-        StringBuilder string = new StringBuilder(input.nextLine());
+        StringBuilder finalMessage = new StringBuilder();
+        String string = input.next();
 
         for (int i = 0; i < string.length(); i++) {
             char character = string.charAt(i);
-            System.out.print(getMorseCode(character) + " ");
+            finalMessage.append(getMorseCode(character));
+            System.out.print(finalMessage + " ");
         }
     }
 }

@@ -10,20 +10,31 @@ public class Session8Challenge13 {
 
     public String expandString(String compressedString) {
         StringBuilder newString = new StringBuilder();
-        int i = 0;
-
-        while (i < compressedString.length()) {
-            char a = compressedString.charAt(i);
-            int count = 0;
-            i++;
-            while (i < compressedString.length() && Character.isDigit(compressedString.charAt(i))) {
-                // convertesc caracterul digit in valoare numerica folosind codul ascii
-                count = compressedString.charAt(i) - '0';
-                i++;
-            }
-
-            for (int j = 0; j < count && newString.length() < compressedString.length(); j++) {
-                newString.append(a);
+//        int i = 0;
+//
+//        while (i < compressedString.length()) {
+//            char a = compressedString.charAt(i);
+//            int count = 0;
+//            i++;
+//            while (i < compressedString.length() && Character.isDigit(compressedString.charAt(i))) {
+//                // convertesc caracterul digit in valoare numerica folosind codul ascii
+//                count = compressedString.charAt(i) - '0';
+//                i++;
+//            }
+//
+//            for (int j = 0; j < count && newString.length() < compressedString.length(); j++) {
+//                newString.append(a);
+//            }
+//        }
+        char[] charArray = compressedString.toCharArray();
+        for (int i = 0; i < charArray.length; i ++) {
+            char currentChar = charArray[i];
+            if (Character.isDigit(currentChar)) {
+                char previousChar = charArray[i - 1];
+                int xTimes = Character.digit(currentChar, 10);
+                for (int j = 0; j < xTimes; j++) {
+                    newString.append(previousChar);
+                }
             }
         }
         return newString.toString();

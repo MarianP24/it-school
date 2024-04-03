@@ -20,11 +20,7 @@ public class Session8Challenge14 {
             char a = text.charAt(i);
             char b = text.charAt(i + 1);
 
-            if (a == '/' && b == '/') {
-                i++;
-            } else if (a == '/' && b == '*') {
-                i++;
-            } else if (a == '*' && b == '/') {
+            if ((a == '/' && b == '/') || (a == '/' && b == '*') || (a == '*' && b == '/')) {
                 i++;
             } else {
                 newText.append(a);
