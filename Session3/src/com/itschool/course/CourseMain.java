@@ -1,4 +1,4 @@
-package itschool.course;
+package com.itschool.course;
 
 public class CourseMain {
 
