@@ -17,7 +17,7 @@ public class Session9Challenge12 {
 
     public void convertToTimeZone() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please insert date & time in format YYYY:MM:DD HH:MM:SS");
+        System.out.println("Please insert date & time in format YYYY-MM-DD HH:MM:SS");
         String dateTimeGivenString = input.nextLine();
         System.out.println("Enter time zone e.g. EET, EST, PST");
         String timeZone = input.nextLine();

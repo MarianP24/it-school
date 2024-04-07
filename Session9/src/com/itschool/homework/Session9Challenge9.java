@@ -12,7 +12,6 @@ public class Session9Challenge9 {
 
     public void daysBetween() {
         Scanner input = new Scanner(System.in);
-        LocalDate localDate = LocalDate.now();
         System.out.println("Please insert first date in format YYYY-MM-DD");
         String firstDateString = input.nextLine();
         System.out.println("Please insert second date in format YYYY-MM-DD");
