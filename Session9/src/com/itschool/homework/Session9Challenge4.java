@@ -1,26 +1,20 @@
 package com.itschool.homework;
 
+import java.util.Scanner;
+
 public class Session9Challenge4 {
     public static void main(String[] args) {
         Session9Challenge4 run = new Session9Challenge4();
-        run.challengeRun4();
+        run.areDatesEqual();
     }
 
-    public void challengeRun4() {
-        StringBuilder remove = new StringBuilder("Let's go for a ride");
-        System.out.println(remove);
-        for (int i = 0; i < remove.length(); i++) {
-            char ch = remove.charAt(i);
-            if (isVowel(ch)) {
-                remove.deleteCharAt(i);
-                i--;
-            }
-        }
-        System.out.println(remove);
-    }
-
-    public static boolean isVowel(char ch) {
-        ch = Character.toLowerCase(ch);
-        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    public void areDatesEqual() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please insert 1st date in format YYYY-MM-DD");
+        String firstDate = input.nextLine();
+        System.out.println("Please insert 2nd date in format YYYY-MM-DD");
+        String secondDate = input.nextLine();
+        System.out.println("Both dates are equal?");
+        System.out.println(firstDate.equals(secondDate));
     }
 }

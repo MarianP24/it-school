@@ -1,19 +1,15 @@
 package com.itschool.homework;
 
-import java.util.List;
+import java.time.LocalDate;
 
 public class Session9Challenge3 {
     public static void main(String[] args) {
         Session9Challenge3 run = new Session9Challenge3();
-        run.ChallengeRun3();
+        run.createSpecificDate();
     }
 
-    public void ChallengeRun3() {
-        StringBuilder concatenate = new StringBuilder();
-        List<String> stringList = List.of("How ","are ","you ","today","?");
-        for (String listElement : stringList) {
-            concatenate.append(listElement);
-        }
-        System.out.println(concatenate);
+    public void createSpecificDate() {
+        LocalDate date = LocalDate.of(2025, 8, 19);
+        System.out.println(date);
     }
 }

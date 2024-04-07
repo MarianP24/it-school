@@ -1,18 +1,17 @@
 package com.itschool.homework;
 
+import java.time.LocalDate;
+
 public class Session9Challenge7 {
     public static void main(String[] args) {
         Session9Challenge7 run = new Session9Challenge7();
-        run.challengeRun7();
+        int weekNr = 4;
+        run.addWeeksToToday(weekNr);
     }
 
-    public void challengeRun7() {
-        StringBuilder dupli = new StringBuilder("Football challenge");
-        System.out.println(dupli);
-        for (int i = 0; i < dupli.length() - 1; i++)
-            if (dupli.charAt(i) == dupli.charAt(i + 1)) {
-                dupli.deleteCharAt(i);
-            }
-        System.out.println(dupli);
+    public void addWeeksToToday(int weekNr) {
+        LocalDate date = LocalDate.now();
+        date = date.plusWeeks(weekNr);
+        System.out.println(weekNr + " weeks from now on is " + date);
     }
 }
