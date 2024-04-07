@@ -1,5 +1,6 @@
 package com.itschool.homework;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Session9Challenge4 {
@@ -11,10 +12,11 @@ public class Session9Challenge4 {
     public void areDatesEqual() {
         Scanner input = new Scanner(System.in);
         System.out.println("Please insert 1st date in format YYYY-MM-DD");
-        String firstDate = input.nextLine();
+        LocalDate firstDate = LocalDate.parse(input.nextLine());
         System.out.println("Please insert 2nd date in format YYYY-MM-DD");
-        String secondDate = input.nextLine();
+        LocalDate secondDate = LocalDate.parse(input.nextLine());
         System.out.println("Both dates are equal?");
         System.out.println(firstDate.equals(secondDate));
+
     }
 }

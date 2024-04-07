@@ -17,7 +17,7 @@ public class ArrayDemo {
         System.out.println(Arrays.toString(zeroArray));
         System.out.println(Arrays.toString(nullStringArray));
 
-        String[] ArrayWithNewAndFixed = new String[] {"ala", "bala", "portocala"};
+        String[] arrayWithNewAndFixed = new String[] {"ala", "bala", "portocala"};
     }
 
     private static void sortArray() {
